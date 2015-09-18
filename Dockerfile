@@ -1,7 +1,7 @@
 FROM jleight/atlassian-base:latest
 MAINTAINER Jonathon Leight <jonathon.leight@jleight.com>
 
-ENV APP_VERSION 6.4.7
+ENV APP_VERSION 6.4.11
 ENV APP_BASEURL ${ATL_BASEURL}/jira/downloads/binary
 ENV APP_PACKAGE atlassian-jira-${APP_VERSION}.tar.gz
 ENV APP_URL     ${APP_BASEURL}/${APP_PACKAGE}
