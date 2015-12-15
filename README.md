@@ -24,7 +24,7 @@ application listens on `/`) you can follow the instructions in the
 
 If you are not planning on running Atlassian JIRA® behind a reverse proxy, you
 can follow the instructions in the [simple](#simple) section. If you plan to use
- a reverse proxy, further instructions can be found in the
+a reverse proxy, further instructions can be found in the
 [reverse proxy](#reverse-proxy) section of this document.
 
 If you are planning to use a different authentication mode, follow the
