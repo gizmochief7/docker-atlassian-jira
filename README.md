@@ -13,7 +13,7 @@ forwarding rule and run the container:
 
     $ docker run \
         -p 8080:8080 \
-        jleight/atlassian-jira
+        gizmochief7/atlassian-jira
 
 Usage
 -----
@@ -42,7 +42,7 @@ A data container can be created by running the following command:
 
     $ docker create \
         --name jira-data \
-        jleight/atlassian-jira
+        gizmochief7/atlassian-jira
 
 The application container can then be started by running:
 
@@ -50,7 +50,7 @@ The application container can then be started by running:
         --name jira \
         --volumes-from jira-data \
         -p 8080:8080 \
-        jleight/atlassian-jira
+        gizmochief7/atlassian-jira
 
 ### Context Root
 
@@ -66,7 +66,7 @@ It can be specified in the `docker run` command like this:
         --volumes-from jira-data \
         -p 8080:8080 \
         -e TC_ROOTPATH=/jira \
-        jleight/atlassian-jira
+        gizmochief7/atlassian-jira
 
 Atlassian JIRA® can then be accessed at http://${HOST_IP}:8080/jira.
 
@@ -91,7 +91,7 @@ https://example.com/jira, you would use the following command:
         -e TC_PROXYNAME=example.com \
         -e TC_PROXYPORT=443 \
         -e TC_ROOTPATH=/jira \
-        jleight/atlassian-jira
+        gizmochief7/atlassian-jira
 
 Once your proxy server is configured, Atlassian JIRA® should be accessible
 at https://example.com/jira.
@@ -130,4 +130,4 @@ Atlassian Crowd® single sign-on authentication running behind the same proxy:
         -e CROWD_APP_NAME=jira \
         -e CROWD_APP_PASS=somesecretpassword \
         -e CROWD_BASE_URL=https://example.com/crowd \
-        jleight/atlassian-jira
+        gizmochief7/atlassian-jira
